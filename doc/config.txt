@@ -137,7 +137,7 @@ Default: 100
 
 ==== default_pool_size ====
 
-How many server connections to allow per user/database pair. Can be overriden in
+How many server connections to allow per user/database pair. Can be overridden in
 the per-database configuration.
 
 Default: 20
@@ -170,7 +170,7 @@ Default: 0
 By default, PgBouncer allows only parameters it can keep track of in startup
 packets - `client_encoding`, `datestyle`, `timezone` and `standard_conforming_strings`.
 
-All others parameters will raise an error.  To allow others parameters, they can be 
+All others parameters will raise an error.  To allow other parameters, they can be 
 specified here, so that pgbouncer knows that they are handled by admin and it can ignore them.
 
 Default: empty
@@ -222,7 +222,7 @@ Default: empty
 ==== stats_users ====
 
 Comma-separated list of database users that are allowed to connect and
-run read-only queries on console. Thats means all SHOW commands except
+run read-only queries on console. That means all SHOW commands except
 SHOW FDS.
 
 Default: empty.
@@ -309,7 +309,7 @@ Setting following timeouts cause unexpected errors.
 
 ==== query_timeout ====
 
-Queries running longer than that are canceled. This should be used only with
+Queries running longer than that are cancelled. This should be used only with
 slightly smaller server-side statement_timeout, to apply only for network
 problems. [seconds]
 
@@ -468,7 +468,7 @@ file.
   "username1" "password" ... 
   "username2" "md5abcdef012342345" ...
 
-There shoud be at least 2 fields, surrounded by double quotes. The first 
+There should be at least 2 fields, surrounded by double quotes. The first 
 field is the username and the second is either a plain-text or a MD5-hashed
 password. PgBouncer ignores the rest of the line.
 
